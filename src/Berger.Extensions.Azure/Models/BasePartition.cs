@@ -18,6 +18,10 @@ namespace Berger.Extensions.Azure
         {
             PartitionKey = code;
             RowKey = deviceId.ToString();
+        }
+        public void SetDates()
+        {
+            CreatedOn = DateTime.UtcNow;
             Timestamp = DateTimeOffset.UtcNow;
         }
         #endregion
