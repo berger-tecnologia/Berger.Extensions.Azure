@@ -16,8 +16,9 @@ namespace Berger.Extensions.Azure
         #region Methods
         public void SetKeys(string code, Guid deviceId)
         {
-            PartitionKey = code;
             RowKey = deviceId.ToString();
+
+            PartitionKey = code;
         }
         public void SetDates()
         {
