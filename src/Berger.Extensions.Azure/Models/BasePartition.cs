@@ -7,8 +7,8 @@ namespace Berger.Extensions.Azure
     public class BasePartition : BaseEntity, ITableEntity
     {
         #region Properties
-        public string PartitionKey { get; set; } = string.Empty;
-        public string RowKey { get; set; } = string.Empty;
+        public string PartitionKey { get; set; }
+        public string RowKey { get; set; }
         public DateTimeOffset? Timestamp { get; set; }
         public ETag ETag { get; set; }
         #endregion
