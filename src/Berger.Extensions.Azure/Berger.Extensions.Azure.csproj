@@ -2,13 +2,14 @@
 	<PropertyGroup>
 		<Nullable>disable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net9.0</TargetFramework>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Azure.Data.Tables" Version="12.9.1" />
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+		<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
