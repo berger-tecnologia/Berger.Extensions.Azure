@@ -9,6 +9,7 @@ namespace Berger.Extensions.Azure
         #region Properties
         public string PartitionKey { get; set; }
         public string RowKey { get; set; }
+        public Guid TrackingId { get; set; }
         public DateTimeOffset? Timestamp { get; set; }
         public ETag ETag { get; set; }
         #endregion
