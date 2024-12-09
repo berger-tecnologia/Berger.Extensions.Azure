@@ -5,7 +5,7 @@ namespace Berger.Extensions.Azure.Storage
 {
     public class BlobStorage
     {
-        public static async Task<bool> DirectoryExistsAsync(BlobContainerClient container, string directory)
+        public async Task<bool> DirectoryExistsAsync(BlobContainerClient container, string directory)
         {
             var blobItems = container.GetBlobsAsync(prefix: directory);
 
@@ -15,7 +15,7 @@ namespace Berger.Extensions.Azure.Storage
             }
             return false;
         }
-        public static async Task CreateDirectoryAsync(BlobContainerClient container, string directory)
+        public async Task CreateDirectoryAsync(BlobContainerClient container, string directory)
         {
             var blobClient = container.GetBlobClient(directory + "/");
 
