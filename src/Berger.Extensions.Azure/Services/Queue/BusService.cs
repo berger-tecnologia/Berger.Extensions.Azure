@@ -21,11 +21,11 @@ namespace Berger.Extensions.Azure.Services.Queue
 
                 await using var client = new ServiceBusClient(Connection);
 
-                ServiceBusSender sender = client.CreateSender(Queue);
+                ServiceBusSender source = client.CreateSender(Queue);
 
                 ServiceBusMessage message = new ServiceBusMessage(json);
 
-                await sender.SendMessageAsync(message);
+                await source.SendMessageAsync(message);
             }
             catch (Exception)
             {
