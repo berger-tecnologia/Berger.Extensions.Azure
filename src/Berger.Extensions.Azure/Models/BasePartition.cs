@@ -23,7 +23,7 @@ namespace Berger.Extensions.Azure
         }
         public void SetDates()
         {
-            CreatedOn = DateTime.UtcNow;
+            //CreatedOn = DateTime.UtcNow;
             Timestamp = DateTimeOffset.UtcNow;
         }
         #endregion
