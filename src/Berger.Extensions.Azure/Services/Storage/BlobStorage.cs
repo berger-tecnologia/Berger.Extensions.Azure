@@ -7,8 +7,8 @@ namespace Berger.Extensions.Azure.Storage
     {
         public async Task<bool> DirectoryExistsAsync(BlobContainerClient container, string directory)
         {
-            var blobItems = container.GetBlobsAsync(prefix: directory);
-
+            var blobItems = container.GetBlobsAsync(options: default);
+            
             await foreach (var blobItem in blobItems)
             {
                 return true;
