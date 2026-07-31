@@ -9,8 +9,8 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 		<PackageReference Include="Azure.Data.Tables" Version="12.11.0" />
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.29.1" />
-		<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.20.1" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.9" />
+		<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.20.2" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.10" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
